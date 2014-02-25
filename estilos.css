@@ -55,6 +55,10 @@ a
 {
 	color: #22BCE0;
 }
+aside
+{
+	display: none;
+}
 body
 {
 	background: #EEEEEE;
@@ -116,12 +120,27 @@ header #avatar img
 	border-radius: 50%;
 	width: 55px;
 }
-header #logo img 
+header #logo
 {
 	border-right: 1px solid white;
 	padding-right: 0.5em;
 	margin-right: 0.5em;
+}
+header #logo img 
+{
+	/*-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;*/
+	transition: .5s;
 	width: 52px;
+}
+header #logo img:hover{
+	/*-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);*/
+	transform: rotate(360deg);
 }
 nav
 {
@@ -264,4 +283,17 @@ nav ul #publicar_nav a
 		margin-right: 2%;
 	}
 
+}
+@media screen and (min-width: 1000px){
+	aside
+	{
+		display: block;
+		float: right;
+		margin: 1em;
+		width: 25%;
+	}
+	aside video
+	{
+		width: 100%;
+	}
 }
