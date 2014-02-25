@@ -164,6 +164,11 @@ nav ul li a
 	display: block;
 	padding: 0.5em;
 	text-decoration: none;
+	transition: .3s;
+}
+nav ul li a:hover
+{
+	background: #344B54;
 }
 nav ul #publicar_nav
 {
@@ -179,6 +184,10 @@ nav ul #publicar_nav a
 	font-style: italic;
 	padding: 0.6em 0.8em;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+nav ul #publicar_nav a:hover
+{
+	box-shadow: 0 0 30px #F4502A;
 }
 #contenido
 {
